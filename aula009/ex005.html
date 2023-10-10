@@ -17,6 +17,7 @@
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript.</p>
     <div class="msg">Clique em mim</div>
+    <div class="msg1">Jogo Carregado</div>
 
     <script>
         var corpo = window.document.body
@@ -26,8 +27,13 @@
         d.style.background = 'green'
         d.innerText = 'Estou aguardando...'
         */
-       var d = window.document.querySelector('div.msg')
-       d.style.background = 'blue'
+       var d = window.document.getElementsByClassName('msg')[0]
+       d.style.background = 'red'
+       d.innerText = 'Carregando...'
+
+       var a = window.document.getElementsByClassName('msg1')[0]
+       a.innerText = 'Jogo carregado'
+       a.style.background = 'orange'
     </script>
 </body>
 </html>
