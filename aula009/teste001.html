@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste em JavaScript</title>
+    <style>
+        * {
+           margin: 0px;
+           padding: 0px;
+           box-sizing: border-box; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste em JavaScript</h1>
+    <p>Estou aprendendo a programar em javascript</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, praesentium velit in quasi illo voluptatibus id, culpa maxime sequi ipsum molestias aliquam blanditiis fugiat, sit optio architecto eum labore aut?</p>
+    <div>Conselho de <strong class="msg">Ouro</strong></div>
+
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = 'white'
+        corpo.style.padding = '10px'
+
+        var titulo = window.document.getElementsByTagName('h1')[0]
+        titulo.style.paddingBottom = '10px'
+
+        var paragrafo = window.document.getElementsByTagName('p')[0]
+
+        var paragrafo2 = window.document.getElementsByTagName('p')[1]
+
+        paragrafo.style.paddingBottom = '10px'
+        paragrafo.style.color = 'blue'
+
+        paragrafo2.style.color = 'red'
+
+        var msg = window.document.querySelector('strong.msg')
+        msg.style.color = '#daa520'
+        msg.style.margin = '300px'
+    </script>
+</body>
+</html>
