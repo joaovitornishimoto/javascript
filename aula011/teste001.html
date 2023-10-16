@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Teste em Javascript</title>
+</head>
+<body>
+    <h1>Somar</h1>
+    Digite um número: <input type="number" name="txtnu1" id="txtnu1"> <br>
+   <br> Digite um segundo número: <input type="number" name="txtn2" id="txtn2">  <br>
+   <br><input type="button" value="Resultado" onclick="calcular()">
+   <div id="total">
+
+   </div>
+
+   <script>
+    function calcular() {
+        var num1 = window.document.getElementById('txtnu1')
+        var num2 = window.document.getElementById('txtn2')
+        var n1 = Number(num1.value)
+        var n2 = Number(num2.value)
+        var res = window.document.getElementById('total')
+        var calc = n1 + n2 
+        res.innerHTML = `${n1} + ${n2} é igual a ${calc}!`
+        if (calc <= 100) {
+            res.innerHTML += `<p>Somar dois valores menores é facil, quero um <strong>DESAFIO DE VERDADE!</strong></p>`
+        } else {
+            res.innerHTML += `<p>É isso ai garoto(a), estou gostando de ver, isso sim é <strong>DESAFIO DE VERDADE!!</strong></p>`
+        }
+    }
+   </script>
+</body>
+</html>
