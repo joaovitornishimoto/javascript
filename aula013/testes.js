@@ -1,3 +1,12 @@
+var contando = 0
+var final = 100
+
+do {
+    console.log(`contando ${contando} : final ${final}`)
+    contando++
+} while (contando <= final)
+
+/*
 var gd = 0
 var meta = 1000
 
@@ -18,6 +27,7 @@ while (gd <= meta) {
 } else {
     console.log("Bata a meta anterior, depois volte aqui.")
 }
+*/
 
 /*
 var corsa = 'Corsa'
