@@ -1,3 +1,10 @@
+console.log("Vai começar!")
+for(var c = 1; c <= 10; c++) {
+    console.log(c)
+}
+console.log("Fim do programa!")
+
+/*
 var contando = 0
 var final = 100
 
@@ -5,6 +12,7 @@ do {
     console.log(`contando ${contando} : final ${final}`)
     contando++
 } while (contando <= final)
+*/
 
 /*
 var gd = 0
