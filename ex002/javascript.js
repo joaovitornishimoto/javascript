@@ -1,33 +1,16 @@
-function maior() {
-    var num1 = parseFloat(document.getElementById('txtn1').value)
-    var num2 = parseFloat(document.getElementById('txtn2').value)
-    var num3 = parseFloat(document.getElementById('txtn3').value)
+function reajuste() {
+    var salario = parseFloat(document.getElementById('txts').value)
+    var reajuste = salario 
 
-    var maior = num1
-
-    if(num2 > maior) {
-        maior = num2
+    if(reajuste <= 280.00) {
+        reajuste = reajuste + (reajuste * 20 / 100)
+        alert("seu salário de " + salario + "foi alterado para"+ reajuste)
+    } else if(reajuste >= 280.00 || reajuste <= 700.00) {
+        reajuste = reajuste + (reajuste * 15 / 100)
+    } else if(reajuste >= 700.00 || reajuste <= 1500.00) {
+        reajuste = reajuste + (reajuste * 10 / 100)
+    } else if(reajuste >= 1500.00) {
+        reajuste + (reajuste * 5 / 100)
+        
     }
-    if(num3 > maior) {
-        maior = num3
-    }
-
-    alert("Maior: "+maior)
-}
-
-function menor() {
-    var num1 = parseFloat(document.getElementById('txtn1').value)
-    var num2 = parseFloat(document.getElementById('txtn2').value)
-    var num3 = parseFloat(document.getElementById('txtn3').value)
-
-    menor = num1
-
-    if(num2 < menor) {
-        menor = num2
-    }
-    if(num3 < menor) {
-        menor = num3
-    }
-
-    alert("Menor: "+menor)
 }
